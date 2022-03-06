@@ -2,10 +2,12 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Script from 'next/script'
 import Image from 'next/image'
+import Container from "../../components/container"
 
 export default function FirstPost() {
     return (
-        <>
+        <Container>
+
             <Head>
                 <title>First Blog Post</title>
             </Head>
@@ -28,6 +30,6 @@ export default function FirstPost() {
                     <a>Terug naar Home</a>
                 </Link>
             </div>
-        </>
+        </Container>
     )
 }
