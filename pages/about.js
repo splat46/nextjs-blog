@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from 'next/image'
 import Head from "next/head"
+import Container from "../components/container"
 
 export default function About () {
     return (
@@ -8,7 +9,7 @@ export default function About () {
             <Head>
                 <title>About Us</title>
             </Head>
-            <div>
+            <Container>
                 <div>
                     <Image 
                         src="/images/profile.jpeg"
@@ -23,7 +24,7 @@ export default function About () {
                 <Link href="/">
                     Terug naar Home
                 </Link>
-            </div>
+            </Container>
         </>
     )
 }
